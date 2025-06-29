@@ -1,0 +1,17 @@
+name: hello-raylib
+version: 0.1.0
+
+authors:
+  - Privateer noreply@example.com
+
+targets:
+  hello-raylib:
+    main: src/hello-raylib.cr
+
+dependencies:
+  raylib-cr:
+    github: sol-vin/raylib-cr
+
+crystal: '>= 1.16.3'
+
+license: GPL-3.0-only
