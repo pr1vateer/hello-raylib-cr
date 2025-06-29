@@ -17,11 +17,11 @@ jobs:
     steps:
     - name: Install raylib
       run: |
-        sudo apt-get update
-        sudo apt-get install -y software-properties-common
-        sudo add-apt-repository -y ppa:texus/raylib
-        sudo apt-get update
-        sudo apt-get install -y libraylib5-dev
+        apt-get update
+        apt-get install -y software-properties-common
+        add-apt-repository -y ppa:texus/raylib
+        apt-get update
+        apt-get install -y libraylib5-dev
     - uses: actions/checkout@v4
     - name: Install dependencies
       run: shards install
