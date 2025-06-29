@@ -15,11 +15,11 @@ jobs:
       image: crystallang/crystal:1.16-alpine
 
     steps:
-    - uses: actions/checkout@v4
     - name: Install raylib
-    - run: |
+      run: |
         apk update
         apk add raylib --no-cache
+    - uses: actions/checkout@v4
     - name: Install dependencies
       run: shards install
     - name: Run build
